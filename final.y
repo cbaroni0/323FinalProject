@@ -5,7 +5,7 @@
 #include <ctype.h>
 int yylex();
 %}
-/* Yacc definitions */
+// Yacc Definitions - items from lex
 %union {int num; char id;}	//yystype      
 %start start
 %token printTemp
@@ -98,7 +98,6 @@ factor  : varName
 * digit returned as number
 * letter is returned as varName
 ****************************************/
-
 %%                     
 
 int main (void) {
